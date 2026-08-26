@@ -26,6 +26,20 @@ var PROJECTS = [
   /* ---- Active projects ---- */
 
   {
+    title:       'AdalBank',
+    description: 'Full-stack digital banking application. Django REST API backend ' +
+                 'with JWT authentication, served via Daphne ASGI. React Native ' +
+                 'mobile frontend built with Expo. PostgreSQL database, containerised ' +
+                 'with Docker.',
+    tech:        ['Django', 'React Native', 'PostgreSQL', 'Docker', 'Python'],
+    status:      'active',
+    repo:        null,  // private repository
+    demo:        null,
+    featured:    false,
+    year:        2026,  // created 2026-05-18
+  },
+
+  {
     title:       'IoT Blockchain System',
     description: 'Records sensor readings from a simulated IoT network onto a ' +
                  'permissioned blockchain so data integrity can be verified rather ' +
@@ -36,11 +50,35 @@ var PROJECTS = [
     repo:        'https://github.com/pribrahimh/IoT-Blockchain-System',
     demo:        null,
     featured:    true,
-    /* TODO: confirm the exact year this project was built */
-    year:        2025,
+    year:        2025,  // created 2025-03-15
   },
 
-  /* ---- Example entry 1 - copy this block and fill in to add a project ---- */
+  {
+    title:       'Nurul Awdal',
+    description: 'Web application for Islamic financial tracking. Features a ' +
+                 'dashboard, donation tracking and project management views. ' +
+                 'Built with React, TypeScript and Vite.',
+    tech:        ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+    status:      'active',
+    repo:        null,  // private repository
+    demo:        null,
+    featured:    false,
+    year:        2025,  // created 2025-04-12
+  },
+
+  {
+    title:       'Food and lifestyle website',
+    description: 'University coursework project. A food and lifestyle site covering ' +
+                 'recipes, culinary ideas and healthy living content. Built in plain HTML.',
+    tech:        ['HTML', 'CSS'],
+    status:      'archived',
+    repo:        'https://github.com/pribrahimh/foodandlifestyle',
+    demo:        null,
+    featured:    false,
+    year:        2023,  // created 2023-03-24
+  },
+
+  /* ---- To add a project, copy this block and fill in the fields ---- */
   // {
   //   title:       'Project name',
   //   description: 'One to two sentences describing what it does and why it exists. ' +
@@ -50,19 +88,7 @@ var PROJECTS = [
   //   repo:        'https://github.com/pribrahimh/repo-name',  // or null if private
   //   demo:        'https://your-demo-url.com',  // or null if no live demo
   //   featured:    false,  // set true to show on the landing page (only one at a time)
-  //   year:        2025,
-  // },
-
-  /* ---- Example entry 2 ---- */
-  // {
-  //   title:       'Another project',
-  //   description: 'Short description here. What does it do? Why does it exist?',
-  //   tech:        ['Bash', 'Linux'],
-  //   status:      'archived',
-  //   repo:        null,   // null = private or not yet published
-  //   demo:        null,
-  //   featured:    false,
-  //   year:        2023,
+  //   year:        2025,   // year from GitHub creation date
   // },
 
 ];
