@@ -127,6 +127,86 @@
 
     <hr class="divider">
 
+    <!-- Academic work - described, not published (targets and code belong to the university) -->
+    <section class="page-section" aria-labelledby="academic-heading">
+      <div class="container">
+        <div class="section-rule"><span>academic work</span></div>
+        <h2 class="subsection-heading" id="academic-heading">Academic work</h2>
+        <p class="muted" style="font-size: var(--size-sm); margin-bottom: var(--space-6); max-width: 54ch; line-height: 1.65;">
+          Selected coursework from the BEng in Cybersecurity and Forensics at Edinburgh
+          Napier. The code and reports are not published because the target applications
+          and lab environments belong to the university, but I am happy to talk through
+          any of them in detail.
+        </p>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Web application penetration test</h3>
+              <span class="tag tag--status">2025</span>
+            </div>
+            <p class="project-card__desc">
+              Black-box test of a university-provided web application following the PTES methodology: scoping, port scanning, vulnerability scanning, controlled exploitation and a client-style report. Findings included verbose server headers, an internal IP address leaked in redirects, missing HttpOnly cookie flags and weak password rules, each with a risk rating and remediation advice.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">PTES</span>
+              <span class="tag">Nmap</span>
+              <span class="tag">OpenVAS</span>
+              <span class="tag">Nikto</span>
+              <span class="tag">Burp Suite</span>
+              <span class="tag">Metasploit</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Securing a vulnerable banking web app</h3>
+              <span class="tag tag--status">2025</span>
+            </div>
+            <p class="project-card__desc">
+              Demonstrated and then fixed vulnerabilities in a deliberately insecure Java banking application, including XSS, SQL injection, IDOR, CSRF, weak session handling, insecure file uploads and code injection. Fixes used prepared statements, input validation and output encoding, CSRF tokens, access checks and safe upload handling, with each fix retested.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Java</span>
+              <span class="tag">OWASP Top 10</span>
+              <span class="tag">Burp Suite</span>
+              <span class="tag">Secure coding</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Blockchain security for campus IoT (Honours project)</h3>
+              <span class="tag tag--status">2025</span>
+            </div>
+            <p class="project-card__desc">
+              Permissioned Hyperledger Fabric network with two organisations recording events from simulated campus devices (card readers, CCTV, CO2 sensors, printers, smart lights). Wrote one smart contract per device type with input validation, duplicate-event rejection and audit history, plus a Node.js gateway receiving sensor data over UDP from a Contiki/Cooja simulation. Evaluated latency and resilience to device impersonation, tampering and denial of service.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Hyperledger Fabric</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Contiki / Cooja</span>
+              <span class="tag">Docker</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Botnet detection with Snort IDS</h3>
+              <span class="tag tag--status">2023</span>
+            </div>
+            <p class="project-card__desc">
+              Built a virtual network with a botnet controller (Ubuntu) and an infected agent (Windows), installed Snort on a Linux server, and configured and tuned detection rules and alerting. Captured the command-and-control traffic in Wireshark to understand it and confirm the alerts fired.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Snort</span>
+              <span class="tag">Wireshark</span>
+              <span class="tag">Ubuntu</span>
+              <span class="tag">Windows Server</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
     <!-- Practice and labs - not projects, but real hands-on work -->
     <section class="page-section" aria-labelledby="practice-heading">
       <div class="container">
