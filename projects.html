@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Ibrahim Hassan</title>
+  <meta name="description" content="Technical projects by Ibrahim Hassan, including an IoT blockchain verification system built with Hyperledger Fabric and Contiki-NG.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="Ibrahim Hassan - home">ibrahim hassan</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">home</a>
+        <a href="work.html">work</a>
+        <a href="projects.html" aria-current="page">projects</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-heading">Projects</h1>
+        <p class="page-intro">
+          New projects, built from scratch and published one at a time. Each one gets
+          tests, automated checks and a write-up. GitHub links appear here as each
+          project is released.
+        </p>
+      </div>
+    </div>
+
+    <section aria-label="Project list">
+      <div class="container">
+        <div class="section-rule"><span>projects</span></div>
+
+        <!--
+          Static fallback content below is shown when JavaScript is disabled.
+          When JS runs, renderProjects() replaces this with dynamically rendered cards.
+          If you add a project to projects.js, also update this static block.
+        -->
+        <div id="projects-grid" class="project-grid">
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">linux-health-check</h3>
+              <span class="tag tag--status">in progress</span>
+            </div>
+            <p class="project-card__desc">
+              Bash tool that checks disk, memory, CPU load, failed systemd services, failed SSH logins and pending updates on a Linux server, writes a report, and runs daily on a systemd timer.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Bash</span>
+              <span class="tag">systemd</span>
+              <span class="tag">Linux</span>
+              <span class="tag">ShellCheck</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">ubuntu-server-hardening</h3>
+              <span class="tag tag--status">planned</span>
+            </div>
+            <p class="project-card__desc">
+              Takes a fresh Ubuntu Server VM to a secure baseline: SSH keys only, ufw firewall, fail2ban, automatic security updates and least-privilege sudo. Automated with Bash and Ansible, with a before/after write-up.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Bash</span>
+              <span class="tag">Ansible</span>
+              <span class="tag">Ubuntu</span>
+              <span class="tag">ufw</span>
+              <span class="tag">fail2ban</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">log-threat-detector</h3>
+              <span class="tag tag--status">planned</span>
+            </div>
+            <p class="project-card__desc">
+              Python tool that reads Linux auth.log and web server logs, detects brute-force logins and scanning, maps findings to MITRE ATT&amp;CK and outputs JSON alerts plus an HTML report.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Python</span>
+              <span class="tag">MITRE ATT&amp;CK</span>
+              <span class="tag">pytest</span>
+              <span class="tag">Log analysis</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">pcap-triage</h3>
+              <span class="tag tag--status">planned</span>
+            </div>
+            <p class="project-card__desc">
+              Python and Scapy tool for a first look at packet captures: protocol statistics, top talkers, suspicious DNS and HTTP traffic, and charts.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Python</span>
+              <span class="tag">Scapy</span>
+              <span class="tag">Wireshark</span>
+              <span class="tag">Network forensics</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">soc-home-lab</h3>
+              <span class="tag tag--status">planned</span>
+            </div>
+            <p class="project-card__desc">
+              Wazuh SIEM lab with an attacker VM: simulated attacks, custom detection rules, and each investigation written up like a real SOC ticket.
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Wazuh</span>
+              <span class="tag">SIEM</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Incident response</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Practice and labs - not projects, but real hands-on work -->
+    <section class="page-section" aria-labelledby="practice-heading">
+      <div class="container">
+        <div class="section-rule"><span>practice and labs</span></div>
+        <h2 class="subsection-heading" id="practice-heading">Hands-on practice</h2>
+        <p class="muted" style="font-size: var(--size-sm); margin-bottom: var(--space-6); max-width: 54ch; line-height: 1.65;">
+          Not projects as such, but real ongoing practice. These are the environments where
+          most of the security and network skills get tested.
+        </p>
+        <ul class="practice-list">
+          <li>
+            <strong>TryHackMe and Hack The Box</strong> - structured labs covering penetration
+            testing, network analysis and defensive techniques.
+          </li>
+          <li>
+            <strong>Capture the Flag competitions</strong> - periodic entry in CTF events,
+            primarily focused on network forensics and binary challenges.
+          </li>
+          <li>
+            <strong>Home IoT lab</strong> - physical lab for network configuration testing,
+            traffic analysis and device hardening practice.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Ibrahim Hassan, Edinburgh, Scotland</p>
+      <p>
+        <a href="https://github.com/pribrahimh" target="_blank" rel="noopener noreferrer">GitHub</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://linkedin.com/in/pribrahim" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        &nbsp;&middot;&nbsp;
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script>
+    (function () {
+      var container = document.getElementById('projects-grid');
+      if (container && typeof renderProjects === 'function') {
+        renderProjects(container);
+      }
+    }());
+  </script>
+
+</body>
+</html>
